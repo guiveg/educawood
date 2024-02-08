@@ -1,0 +1,255 @@
+{
+	"title": 'EducaWood',
+	
+	"minZoom": 4,
+	"maxZoom": 22,
+	"geoConfigs": {
+		"osmMap": {
+			"url": 'XXXXX',
+			"options": {
+				"attribution": 'Educawood © <a href="https://www.gsic.uva.es/members/guiveg">Guillermo Vega</a> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+				"minZoom": 4,
+				"maxZoom": 22,
+				"maxNativeZoom": 19
+			}
+		},
+		"esriMap": { 
+			"url":  'XXXXX',
+			"options": {
+				"attribution": 'Educawood © <a href="https://www.gsic.uva.es/members/guiveg">Guillermo Vega</a> | &copy; <a href="https://www.esri.com">Esri</a>',
+				"minZoom": 4,
+				"maxZoom": 22,
+				"maxNativeZoom": 19
+			}
+		},
+		"osmMinimap": { 
+			"url": 'XXXXX',
+			"options": {
+				"attribution": 'Educawood © <a href="https://www.gsic.uva.es/members/guiveg">Guillermo Vega</a> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+				"minZoom": 20,
+				"maxZoom": 22,
+				"maxNativeZoom": 19
+			}
+		},
+		"esriMinimap": { 
+			"url":  'XXXXX',
+			"options": {
+				"attribution": 'Educawood © <a href="https://www.gsic.uva.es/members/guiveg">Guillermo Vega</a> | &copy; <a href="https://www.esri.com">Esri</a>',
+				"minZoom": 20,
+				"maxZoom": 22,
+				"maxNativeZoom": 19
+			}
+		}
+	},
+	"geolocstart": [40.24, -4.24],
+	
+	"timeout": 4000,
+	"timeoutStep": 2000,
+	
+	"zStart": 7,
+	"zMyloc": 10,
+	"zLugar": 13,
+	"zCreacion": 16,
+	"zMaxCelda": 18,
+	"zMiniMapa": 20,
+	
+	"zDegreesStep4": 12,
+	
+	"treeThreshold": 100,	
+
+	"firebaseConfig": {
+		"apiKey": "XXXXX",
+		"authDomain": "XXXXX",
+		"projectId": "XXXXX",
+		"storageBucket": "XXXXX",
+		"messagingSenderId": "XXXXX",
+		"appId": "XXXXX",
+		"measurementId": "XXXXX"
+	},
+		
+	
+	"craftsConfig": {
+		"api": 'XXXXX',
+		"auth": 'Bearer XXXXX',
+		"querySubclasses": '/query?id=subclasses&ancestor={{{ancestor}}}',
+		"queryInfoClasses": '/query?id=infoClasses&ancestor={{{ancestor}}}',
+		"queryCountTreesinbox": '/query?id=counttreesinbox{{#species}}&species={{{species}}}{{/species}}&lngwest={{lngwest}}&lngeast={{lngeast}}&latnorth={{latnorth}}&latsouth={{latsouth}}',
+		"queryTreesinbox": '/query?id=treesinbox{{#species}}&species={{{species}}}{{/species}}{{#lngwest}}&lngwest={{{lngwest}}}{{/lngwest}}{{#lngeast}}&lngeast={{{lngeast}}}{{/lngeast}}{{#latnorth}}&latnorth={{{latnorth}}}{{/latnorth}}{{#latsouth}}&latsouth={{{latsouth}}}{{/latsouth}}{{#limit}}&limit={{{limit}}}{{/limit}}{{#offset}}&offset={{{offset}}}{{/offset}}',
+		"queryTreesinboxbasico": '/query?id=treesinboxbasico{{#species}}&species={{{species}}}{{/species}}{{#lngwest}}&lngwest={{{lngwest}}}{{/lngwest}}{{#lngeast}}&lngeast={{{lngeast}}}{{/lngeast}}{{#latnorth}}&latnorth={{{latnorth}}}{{/latnorth}}{{#latsouth}}&latsouth={{{latsouth}}}{{/latsouth}}{{#limit}}&limit={{{limit}}}{{/limit}}{{#offset}}&offset={{{offset}}}{{/offset}}',		
+		"queryCountEducatreesinbox": '/query?id=counteducatreesinbox{{#species}}&species={{{species}}}{{/species}}&lngwest={{lngwest}}&lngeast={{lngeast}}&latnorth={{latnorth}}&latsouth={{latsouth}}',
+		"queryEducatreesinbox": '/query?id=educatreesinbox{{#species}}&species={{{species}}}{{/species}}{{#lngwest}}&lngwest={{{lngwest}}}{{/lngwest}}{{#lngeast}}&lngeast={{{lngeast}}}{{/lngeast}}{{#latnorth}}&latnorth={{{latnorth}}}{{/latnorth}}{{#latsouth}}&latsouth={{{latsouth}}}{{/latsouth}}{{#limit}}&limit={{{limit}}}{{/limit}}{{#offset}}&offset={{{offset}}}{{/offset}}',
+		"queryUsernick": '/query?id=usernick&nick={{{nick}}}',
+		"queryMostRecentEducatrees": '/query?id=mostRecentEducatrees{{#user}}&user={{{.}}}{{/user}}&limit={{limit}}{{#offset}}&offset={{{.}}}{{/offset}}',
+		"queryMostRecentAnnotations": '/query?id=mostRecentAnnotations{{#user}}&user={{{.}}}{{/user}}&limit={{limit}}{{#offset}}&offset={{{.}}}{{/offset}}',
+		"queryValidTaxons": '/query?id=validTaxons{{#eiri}}&eiri={{{.}}}{{/eiri}}',
+		"queryExistingWikidataTaxons": '/query?id=existingWikidataTaxons{{#wdiri}}&wdiri={{{.}}}{{/wdiri}}',				
+		"resourceTemplate": '/resource?id={{{id}}}&iri={{{iri}}}',
+		"resourcesTemplate": '/resources?id={{{id}}}{{#iris}}&iris={{{.}}}{{/iris}}{{#ns}}&ns={{{ns}}}{{/ns}}{{#nspref}}&nspref={{{nspref}}}{{/nspref}}'
+	},
+	
+
+	"solrConfig": {
+		"path": 'XXXXX',
+		"suggestHandler": '/suggest',
+		"suggesters": {
+			"en": "chestEn",
+			"es": "chestEs",
+			"pt": "chestPt"
+		},
+		"labels": {
+			"en": "labelEn",
+			"es": "labelEs",
+			"pt": "labelPt"
+		},
+		"suggestTemplate": '?q={{{input}}}',
+		"selectHandler": '/select',
+		"selectTemplate": '?q=id:"{{{id}}}"'
+	},
+	
+	
+	"edubase": "http://educawood.gsic.uva.es",
+	
+
+	"zonasIFN": [
+		[ [43.795, -9.300], [36.000, 3.333] ],
+		[ [29.450, -18.166], [27.636, -13.410] ]
+	],
+	
+	
+	"especiesTop": ['https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class2', 
+		'https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class1'],
+		
+	"estadoArboles": [
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/AliveTreeAnnotation", 
+			"label": { "en": "Alive tree", "es": "Árbol vivo" }, "pref": "" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/DecliningTreeAnnotation", 
+			"label": { "en": "Declining tree", "es": "Árbol en declive" }, "pref": "" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/DeadTreeAnnotation", 
+			"label": { "en": "Dead tree",	"es": "Árbol muerto" }, "pref": "" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/DeadTreeWithBarkAnnotation", 
+			"label": { "en": "Dead tree with bark", "es": "Árbol muerto con corteza" }, 
+			"pref": "&nbsp;&nbsp;&nbsp;&nbsp;" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/DeadTreeWithLooseBarkAnnotation", 
+			"label": { "en": "Dead tree with loose bark",	"es": "Árbol muerto con corteza suelta" }, 
+			"pref": "&nbsp;&nbsp;&nbsp;&nbsp;" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/DeadTreeWithNoBarkAnnotation", 
+			"label": { "en": "Dead tree with no bark", "es": "Árbol muerto sin corteza" },
+			"pref": "&nbsp;&nbsp;&nbsp;&nbsp;" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/DecomposedTreeAnnotation", 
+			"label": { "en": "Decomposed dead tree", "es": "Árbol descompuesto" }, 
+			"pref": "&nbsp;&nbsp;&nbsp;&nbsp;" },
+		{ "iri": "http://educawood.gsic.uva.es/sta/ontology/StumpAnnotation", 
+			"label": { "en": "Stump",	"es": "Tocón" }, 
+			"pref": "&nbsp;&nbsp;&nbsp;&nbsp;" }	
+	],
+
+	"annotationTypeLabels": {
+		"pordefecto" :	{ "en": "Tree annotation", "es": "Anotación de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/SpeciesAnnotation" :
+			{ "en": "Taxon annotation", "es": "Anotación de taxón" },
+		"http://educawood.gsic.uva.es/sta/ontology/PositionAnnotation" :
+			{ "en": "Position annotation", "es": "Anotación de posición" },
+		"http://educawood.gsic.uva.es/sta/ontology/DiameterAnnotation" :
+			{ "en": "Diameter annotation", "es": "Anotación de diámetro" },
+		"http://educawood.gsic.uva.es/sta/ontology/HeightAnnotation" :
+			{ "en": "Height annotation", "es": "Anotación de altura" },
+		"http://educawood.gsic.uva.es/sta/ontology/ImageAnnotation" :
+			{ "en": "Photo annotation", "es": "Anotación de foto" },
+		"http://educawood.gsic.uva.es/sta/ontology/ObservationAnnotation" :
+			{ "en": "Observation annotation", "es": "Anotación de observación" },
+		"http://educawood.gsic.uva.es/sta/ontology/TreeStatusAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/AliveTreeAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/DecliningTreeAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/DeadTreeAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/DeadTreeWithBarkAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/DeadTreeWithLooseBarkAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/DeadTreeWithNoBarkAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/DecomposedTreeAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" },
+		"http://educawood.gsic.uva.es/sta/ontology/StumpAnnotation" :
+			{ "en": "Tree status annotation", "es": "Anotación de estado de árbol" }
+	},
+
+
+	"treeicon": 'frondosa',
+	"familyicons": {
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class2": 'conifera',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Class1": 'frondosa',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family12": 'fagacea',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family16": 'eucalipto',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family13": 'chopo',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family19": 'abedul',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family22": 'cipres',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family44": 'fresno',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family49": 'manzano',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family32": 'acebo',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family17": 'castindias',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family14": 'acacia',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family11": 'olmo',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family46": 'platano',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family41": 'tilo',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Family33": 'palmera',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus122": 'haya',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus123": 'castano',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus222": 'sabina',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus213": 'abeto',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus132": 'sauce',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus442": 'olivo',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus214": 'alerce',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus216": 'douglas',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus144": 'robinia',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus215": 'picea',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Genus212": 'cedro',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species21": 'psilv',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species26": 'pinaster',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species45": 'encina',
+		"https://datos.iepnb.es/def/sector-publico/medio-ambiente/ifn/Species23": 'pinonero'
+	},
+
+	"plantPartPhoto": 'http://educawood.gsic.uva.es/sta/ontology/PlantPartPhoto',
+	
+	
+	"page": 10,
+	"pageus": 5,
+	
+	
+	"colores": [
+		['#E8F5E9', '#C8E6C9', '#A5D6A7', '#81C784', '#66BB6A', '#4CAF50', '#43A047', '#388E3C', '#2E7D32', '#1B5E20'],
+		['#FAFAFA', '#F5F5F5', '#EEEEEE', '#E0E0E0', '#BDBDBD', '#9E9E9E', '#757575', '#616161', '#424242', '#212121'],
+		['#ECEFF1', '#CFD8DC', '#B0BEC5', '#90A4AE', '#78909C', '#607D8B', '#546E7A', '#455A64', '#37474F', '#263238'],
+		['#FFF3E0', '#FFE0B2', '#FFCC80', '#FFB74D', '#FFA726', '#FF9800', '#FB8C00', '#F57C00', '#EF6C00', '#E65100'],
+		['#E3F2FD', '#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#2196F3', '#1E88E5', '#1976D2', '#1565C0', '#0D47A1'],
+		['#FCE4EC', '#F8BBD0', '#F48FB1', '#F06292', '#EC407A', '#E91E63', '#D81B60', '#C2185B', '#AD1457', '#880E4F'],
+		['#F3E5F5', '#E1BEE7', '#CE93D8', '#BA68C8', '#AB47BC', '#9C27B0', '#8E24AA', '#7B1FA2', '#6A1B9A', '#4A148C'],
+		['#E8EAF6', '#C5CAE9', '#9FA8DA', '#7986CB', '#5C6BC0', '#3F51B5', '#3949AB', '#303F9F', '#283593', '#1A237E'],
+		['#E0F7FA', '#B2EBF2', '#80DEEA', '#4DD0E1', '#26C6DA', '#00BCD4', '#00ACC1', '#0097A7', '#00838F', '#006064'],
+		['#EFEBE9', '#D7CCC8', '#BCAAA4', '#A1887F', '#8D6E63', '#795548', '#6D4C41', '#5D4037', '#4E342E', '#3E2723'],
+	],
+	"coltesforind": 0,
+	"colindefind": 1,
+	"coltxinds": [5, 6, 7, 8, 9],
+	
+
+	"numsugs": 8,
+	"hidemax": 8,
+	"hidebegin": 5,
+	
+
+	"tempTextWD": "XXXXX",
+	"limitWD": 50,
+	
+
+	"langs": ["en", "es"],
+	"nolang": "nolang",
+	
+
+	"interSessionQGap": 432000000,
+	"intraSessionQGap": 300000
+}

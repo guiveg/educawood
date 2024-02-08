@@ -1,0 +1,100 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+html, body, #mimapa {
+	height: 100%;
+	width: 100%;
+}
+
+#mimapa {
+	position:fixed;
+	bottom: 0px;
+}
+
+.mitarjeta {
+   width: 98vw;
+   max-width: 25rem;
+}
+
+/* Style for disabled map buttons */
+.leaflet-bar-part-single.disabled {
+  opacity: 0.5; /* Reduce opacity for disabled state */
+  cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+/* ajusto el hover, esto es por pasar a Bootstrap 5 */
+#bot_info_filtro_taxon:hover {
+    opacity: 1.0;
+}
+#bot_info_filtro_taxon {
+    opacity: 0.75;
+}
+#bot_color_filtro:hover {
+    opacity: 1.0;
+}
+#bot_color_filtro {
+    opacity: 0.75;
+}
+
+/* esto es para que los botones de navegación
+estén por debajo del card de .mitarjeta*/
+.leaflet-bottom {
+	z-index: 600;
+}
+
+/* alerta para el cuestionario */
+#questalert {
+	position:absolute;
+	z-index: 999; 
+	bottom:0px;
+}
+
+.marcadorTexto {
+  width: 56px;
+  height: 56px;
+  background-color: #795548; /* brown 500 */ /*#F4511E; deep orange 600 */
+  border: 3px solid #3E2723; /* brown 900 */ /*#BF360C; deep orange 900 */
+  text-align: center;
+  line-height: 50px;  
+  font-size: medium;
+  color: #ECEFF1; /* blue grey 50 */
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: block;
+}
+
+
+/* botones de Leaflet más grandes (30px por defecto) */
+.leaflet-touch .leaflet-bar a {
+	width: 40px;
+  	height: 40px;
+	line-height: 40px;
+}
+/* incremento tamaño glifos controles, pero sin afectar al zoom ni a la atribución */
+.leaflet-control a:not(.leaflet-control-zoom a):not(.leaflet-control-attribution a) {
+	font-size: 0.87rem;
+}
+/* cambio el margen de la derecha para que sea igual a me-1 me-sm-2 de Bootstrap */
+.leaflet-right .leaflet-control {
+  margin-right: 0.25rem !important; /* Apply Bootstrap class me-1 */
+}
+@media (min-width: 576px) {
+  .leaflet-right .leaflet-control {
+    margin-right: 0.5rem !important; /* Apply Bootstrap class me-sm-2 at the small breakpoint */
+  }
+}
+
+/* elimino el icono por defecto de dibujar polígono de Leaflet.Draw */
+.download {
+  background-image: none !important; /* Removes the background image (icon) */
+}
+/* reajusto margen de las acciones de Leaflet.Draw por poner botones más grandes */
+.leaflet-draw-actions {
+  right: 42px !important;
+}
+/* para que no me ponga el color azul de los hiperenlaces de Leaflet en los controles de Leaflet.Draw */
+.leaflet-draw-actions a {
+  color: white;
+}
