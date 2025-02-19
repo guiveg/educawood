@@ -1,0 +1,20 @@
+Timestamp,Me gustaría usar este sistema frecuentemente,Considero que este sistema es innecesariamente complejo,Creo que el sistema es fácil de usar,Considero necesario el apoyo de personal experto para poder utilizar este sistema,Considero que las funciones del sistema están bien integradas,Me parece que el sistema presenta muchas contradicciones,Supongo que la mayoría de la gente aprenderá a usar este sistema rápidamente,Considero que el uso de este sistema es tedioso,Me sentí muy confiado al usar este sistema,Necesité aprender bastantes cosas antes de empezar a usar este sistema,SUS SCORE
+2023/12/20 10:12:47 AM GMT+1,4,1,5,3,5,1,5,1,5,3,87.5
+2023/12/20 10:27:06 AM GMT+1,4,1,5,3,4,2,4,2,5,1,82.5
+2023/12/12 1:20:15 PM GMT+1,4,4,5,5,4,3,2,1,4,2,60
+2023/12/12 1:21:01 PM GMT+1,5,1,5,2,4,2,5,3,2,2,77.5
+2023/12/12 1:22:10 PM GMT+1,3,2,4,2,4,2,3,2,4,2,70
+2023/12/12 1:22:45 PM GMT+1,4,4,4,3,2,3,4,3,4,5,50
+2023/12/12 1:23:11 PM GMT+1,3,1,5,3,4,1,4,2,4,2,77.5
+2023/12/12 1:23:21 PM GMT+1,4,3,5,2,4,2,4,2,5,2,77.5
+2023/12/12 1:23:48 PM GMT+1,5,1,5,1,4,1,4,2,4,3,85
+2023/12/12 1:24:08 PM GMT+1,4,2,4,2,4,2,4,2,3,2,72.5
+2023/12/12 1:24:41 PM GMT+1,5,1,5,1,4,1,5,1,5,2,95
+2023/12/12 1:24:51 PM GMT+1,3,3,5,1,4,1,5,2,3,1,80
+2023/12/12 1:24:53 PM GMT+1,3,2,4,3,3,2,3,3,3,2,60
+2023/12/12 1:25:17 PM GMT+1,4,2,4,2,4,2,3,3,3,2,67.5
+2023/12/12 7:07:38 PM GMT+1,4,2,5,2,4,2,5,2,4,2,80
+2023/12/16 8:59:54 PM GMT+1,3,1,4,2,3,1,5,2,4,1,80
+,SUS1,SUS2,SUS3,SUS4,SUS5,SUS6,SUS7,SUS8,SUS9,SUS10,
+mean,3.9,1.9,4.6,2.3,3.8,1.8,4.1,2.1,3.9,2.1,75.2
+standard deviation,0.7,1.1,0.5,1.0,0.7,0.7,0.9,0.7,0.9,1.0,11.5
