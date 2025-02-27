@@ -1,6 +1,6 @@
 # EducaWood: Your social application for forestry education
 
-EducaWood is a social web application for forestry education. the exploration of world-wide Cultural Heritage. It uses Linked Open Data from the [Spanish National Forestry Inventory](https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn3.html), [Wikidata](https://www.wikidata.org) and [DBpedia](https://www.dbpedia.org/). 
+EducaWood is a social web application for forestry education. 
 
 These are some of the features of EducaWood:
 
@@ -15,6 +15,8 @@ These are some of the features of EducaWood:
 * The application can run in any device with a modern browser
 
 * Effective hiding of RDF/OWL/SPARQL
+  
+* Employs the [Simple Tree Annotation ontology (STA)](https://github.com/guiveg/sta)
 
 * Powered by [CRAFTS (Configurable REST APIs For Triple Stores)](https://crafts.gsic.uva.es/)
 
@@ -31,7 +33,9 @@ Alternatively, you can just try a live version of EducaWood on [https://educawoo
 
 Dataset
 ==========
-EducaWood tree annotations are published in a triplestore with endpoint URL [https://semanticforest.gsic.uva.es/sparql](https://semanticforest.gsic.uva.es/sparql) and graph IRI [http://educawood.gsic.uva.es](http://educawood.gsic.uva.es).
+EducaWood uses Linked Open Data from the [Spanish National Forestry Inventory](https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/ifn3.html), [Wikidata](https://www.wikidata.org) and [DBpedia](https://www.dbpedia.org/). 
+
+Tree annotations are published in a triplestore with endpoint URL [https://semanticforest.gsic.uva.es/sparql](https://semanticforest.gsic.uva.es/sparql) and graph IRI [http://educawood.gsic.uva.es](http://educawood.gsic.uva.es).
 
 
 Pilot study
