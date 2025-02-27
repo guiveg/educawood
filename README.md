@@ -29,6 +29,16 @@ but you need to set up your own [CRAFTS API](https://crafts.gsic.uva.es/) to acc
 Alternatively, you can just try a live version of EducaWood on [https://educawood.gsic.uva.es/](https://educawood.gsic.uva.es/)
 
 
+Dataset
+==========
+EducaWood tree annotations are published in a triplestore with endpoint URL [https://semanticforest.gsic.uva.es/sparql](https://semanticforest.gsic.uva.es/sparql) and graph IRI [http://educawood.gsic.uva.es](http://educawood.gsic.uva.es).
+
+
+Pilot study
+==========
+We have run a pilot of EducaWood at the Yutera campus of Universidad de Valladolid in a "Reforestation, Nurseries, and Gardening" course in the third year of the Forestry and Environmental Engineering degree. Students have collaboratively created a tree inventory with EducaWood, it can be accessed [https://educawood.gsic.uva.es/map?loc=41.986754,-4.516886,18z&esri=true](here). Students were asked to fill the standardized System Usability Score (SUS). The SUS scores can be accessed [https://github.com/guiveg/educawood/blob/main/SUS_educawood.csv](here).
+
+
 Help us to improve
 ==========
 EducaWood is available under an Apache 2.0 license. Please send us an email to [guiveg@tel.uva.es](mailto:guiveg@tel.uva.es) 
@@ -40,7 +50,7 @@ if you use or plan to use EducaWood. Drop us also a message if you have comments
 
 Screenshots
 ==========
-Some screenshots of LOD4Culture (somewhat old, the user interface is cooler now):
+Some screenshots of EducaWood (somewhat old, the user interface is cooler now):
 
 ![screenshot 1](https://educawood.gsic.uva.es/app/images/educawood0.png)
 
